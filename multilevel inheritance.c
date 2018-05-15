@@ -1,4 +1,4 @@
-https://www.hackerrank.com/challenges/ctci-making-anagrams/problem*/
+/*multiple inheritance problem */
 #include <cmath>
 #include <cstdio>
 #include <vector>
