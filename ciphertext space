@@ -1,0 +1,29 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int i,temp,n;
+    string str;
+    cin>>str;
+    n=str.length();
+   for(i=0;i<n;i++)
+   {
+       temp=str[i];
+       if(temp!='9')
+       {
+           temp++;
+       }
+       else
+           temp='0';
+       
+       str[i]=temp;
+   }
+    cout<<str;
+    return 0;
+}
