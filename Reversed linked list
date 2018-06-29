@@ -1,0 +1,21 @@
+//function Template for C++
+/* Linked List Node structure
+   struct Node  {
+     int data;
+     Node *next;
+  }
+*/
+// Should reverse list and return new head.
+Node* reverse(Node *head)
+{
+    Node *p=head,*q=NULL,*n;
+    while(p!=NULL){
+        n=p->next;
+        p->next=q;
+        q=p;
+        p=n;
+    }
+    head=q;
+    return head;
+ 
+}
